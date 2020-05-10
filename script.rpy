@@ -1,13 +1,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 define MC = Character("[name]")
-define NPC = Character("Student")
-define U = Character("???")
-define A = Character ("Amiel")
-define D = Character ("Demir")
-define C = Character ("Cassiel")
-define M = Character ("Marie")
-define R = Character("Retainer")
 
 # Where the pronoun Magic Happens
 
