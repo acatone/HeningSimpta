@@ -27,15 +27,15 @@ default Title = "Your Highness"
 $ appearance = undefined
 
 image character = ConditionSwitch(
-    "appearance == 'female'", "images/fem.png",
+    "appearance == 'female'", "images/female.png",
     "appearance == 'male'", "images/male.png"
     )
 
 
 screen charaselect():
     imagemap:
-        idle "images/charaselect_idle.png"
-        hover "images/charaselect_hover.png"
+        idle "images/charaselect_idle.jpg"
+        hover "images/charaselect_hover.jpg"
 
         hotspot (286, 85, 614, 991) action Jump("male")
         hotspot (1072, 118, 533, 962) action Jump("female")
@@ -84,13 +84,13 @@ label name:
     menu:
         "Pronouns?"
 
-        "My Lady":
+        "She/Her":
             jump choice_F
 
-        "My Lord":
+        "He/Him":
             jump choice_M
 
-        "Your Highness":
+        "They/Them":
             jump choice_NB
 
 label choice_F:
@@ -102,13 +102,13 @@ label choice_F:
 label choice_M:
     $ mPronouns = True
 
-    U "I prefer Masculine Pronouns"
+    "I prefer Masculine Pronouns"
     jump Intro
 
 label choice_NB:
     $ nbPronouns = True
 
-    U "I prefer Neutral Pronouns"
+    "I prefer Neutral Pronouns"
     jump Intro
 
 label Intro:
