@@ -79,7 +79,7 @@ label name:
         name = renpy.input("What is your name?")
         name = name.strip() or "Maine"
 
-    "Yes, my name is [name]
+    "Yes, my name is [name]"
 
     menu:
         "Pronouns?"
